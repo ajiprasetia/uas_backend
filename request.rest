@@ -1,0 +1,33 @@
+GET http://localhost:8000/users
+
+###
+GET http://localhost:8000/users/1
+
+###
+POST  http://localhost:8000/users
+Content-Type: application/json
+
+{
+    "nim": "12050111111",
+    "nama": "Ajijo",
+    "email": "aji@gmail.com",
+    "alamat": "Kampar",
+    "prodi": "Informatika",
+    "gender": "Male"
+}
+
+###
+PATCH   http://localhost:8000/users/1
+Content-Type: application/json
+
+{
+    "nim": "12050111112",
+    "nama": "Jefri",
+    "email": "jefri@gmail.com",
+    "alamat": "Pekanbaru",
+    "prodi": "Informatika",
+    "gender": "Male"
+}
+
+###
+DELETE  http://localhost:8000/users/2
